@@ -6,7 +6,7 @@ const uri =
   "mongodb+srv://doctorshub:doctorshub@cluster0.qvfs4.mongodb.net/docotors-hub?retryWrites=true&w=majority";
 
 const app = express();
-const port = 4088 || process.env.PORT;
+const port = process.env.PORT || 4088;
 
 app.use(cors());
 app.use(express.json());
